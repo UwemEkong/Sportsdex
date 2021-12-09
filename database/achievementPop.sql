@@ -1,0 +1,21 @@
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (1, 'Attend a Bulls game', 5, 'bulls');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team)VALUE (2, 'Attend a White Sox game', 5, 'white sox');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (3, 'Attend a Cubs game', 5, 'cubs');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (4, 'Attend a Bears game', 5, 'bears');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (5, 'Attend a Blackhawks game', 5, 'blackhawks');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (6, 'Saw the Cubs win the World Series', 10, 'cubs');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (7, 'Saw the Bears Win a playoff game', 10, 'bears'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (8, 'Saw MVP Derrick Rose play for the Bulls', 10, 'bulls'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (9, 'Saw the White Sox win the World Series', 10, 'white sox'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (10, 'Saw the Blackhawks win the Stanley Cup', 10, 'blackhawks'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (11, 'Bought a beer at a Bears game', 1, 'bears');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (12, 'Caught a T-Shirt at a Bulls game', 1, 'bulls');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (13, 'Ate a glizzy at a Cubs game', 1, 'cubs'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (14, 'Ate a glizzy at a Sox game', 1, 'sox'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (15, 'Witnessed a fight at a Blackhawks game', 1, 'blackhawks');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (16, 'Saw the Cubs hit a grand slam', 5, 'cubs'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (17, 'Saw the Bears get an interception', 5, 'bears'); 
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (18, 'Saw the White Sox pitch a no hitter', 5, 'white sox');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (19, 'Saw the Bulls beat LeBron', 5, 'bulls');
+INSERT INTO SportsDex.achievements (idachievements, description, points, team) VALUE (20, 'Saw the Blackhawks get a shutout', 5, 'blackhawks');
+
