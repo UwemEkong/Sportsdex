@@ -14,13 +14,17 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavComponent } from './components/nav/nav.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
+import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     ProfileComponent,
-    NavComponent
+    NavComponent,
+    AchievementsComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
