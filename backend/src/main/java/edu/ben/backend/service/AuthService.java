@@ -22,6 +22,7 @@ public class AuthService {
 
     public userDTO login(String username, String password) {
         user user = userRepository.findByUsername(username);
+        System.out.println(user);
         if (user == null) {
             throw new UserNotFoundException();
         } else if (!user.getPassword().equals(password)) {
@@ -46,12 +47,12 @@ public class AuthService {
             throw new MissingFieldException();
         } else {
             System.out.println(userDTO);
-            userRepository.save(new user(userDTO.getUsername(), userDTO.getPassword(), userDTO.getEmail(), userDTO.getFirstName(), userDTO.getLastName()));
+            userRepository.save(new user(userDTO.getUsername(), userDTO.getPassword(), userDTO.getEmail(), userDTO.getFirstname(), userDTO.getLastname()));
         }
     }
 
     private boolean missingField(userDTO userDTO) {
-        if (userDTO.getUsername().equals("") || userDTO.getEmail().equals("") || userDTO.getFirstName().equals("") || userDTO.getLastName().equals("") || userDTO.getPassword().equals("")) {
+        if (userDTO.getUsername().equals("") || userDTO.getEmail().equals("") || userDTO.getFirstname().equals("") || userDTO.getLastname().equals("") || userDTO.getPassword().equals("")) {
             return true;
         }
         return false;
