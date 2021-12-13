@@ -23,9 +23,9 @@ public class user {
     String password;
     @Column(name = "email")
     String email;
-    @Column(name = "firstName")
+    @Column(name = "firstname")
     String firstname;
-    @Column(name = "lastName")
+    @Column(name = "lastname")
     String lastname;
 
     public user(String username, String password, String email, String firstname, String lastname) {
