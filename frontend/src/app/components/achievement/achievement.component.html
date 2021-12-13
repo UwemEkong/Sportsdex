@@ -1,3 +1,7 @@
 <div class="achievement-cont">
-yerr
+<div class="img-cont" [ngStyle]="{'background-image': 'url(' + achievement.image + ')', 'background-position': '50% 50%'}">
+    <!-- <img src="{{achievement.image}}" class="achievement-img"> -->
+</div>
+<p class="achievement-title">{{achievement.title}}</p>
+<button class="achievement-btn">Unlock!</button>
 </div>
