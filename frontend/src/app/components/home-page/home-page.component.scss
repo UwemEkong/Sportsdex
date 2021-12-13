@@ -8,9 +8,32 @@
     width:50%;
     margin-left:25%;
     margin-right:25%;
+    border:solid blue;
 }
 
 .header-cont {
     text-align:center;
     color:#EC0000;
+}
+
+.filter-container {
+    width:100%;
+}
+.selected-team {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.filter-cont-col1 {
+    border: solid green;
+    width:25%;
+}
+
+.filter-cont-col2 {
+    border: solid red;
+}
+
+.selected-team {
+    text-align:center;
 }

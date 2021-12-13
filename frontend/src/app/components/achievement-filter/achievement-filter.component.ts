@@ -11,7 +11,7 @@ export class AchievementFilterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  selectedTeam = "Chicago Bulls";
   filterAchievements(filterData: any) {
 
   }

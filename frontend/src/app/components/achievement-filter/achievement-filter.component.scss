@@ -2,16 +2,16 @@
     color:#EC0000;
     font-weight: bold;
     font-size:24px;
-    margin-left:25%;
+    margin-left:3%;
 }
 
 .filter-input {
-    width:15%;
-    margin-left:25%;
+    width:80%;
+    margin-left:50px;
+    float:right;
 }
 
 .filter-btn {
-    margin-left:25%;
     background-color:#EC0000;
     border-radius:20px;
     color:white;
@@ -19,4 +19,10 @@
     border-style: solid;
     font-size:20px;
     font-weight:bold;
+    float:left;
+    margin-left:0px;
+}
+
+.row-cont {
+    width: 100%;
 }
