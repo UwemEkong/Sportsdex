@@ -6,11 +6,10 @@ import {AchievementsComponent} from "./components/achievements/achievements.comp
 import {LeaderboardComponent} from "./components/leaderboard/leaderboard.component";
 import {SigninComponent} from "./components/signin/signin.component";
 import {SignupComponent} from "./components/signup/signup.component";
-import { HomePageComponent } from './components/home-page/home-page.component';
+
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
-  { path: 'homepage2', component: HomePageComponent},
   { path: '', component: SigninComponent},
   { path: 'profile', component: ProfileComponent},
   { path: 'achievements', component: AchievementsComponent},

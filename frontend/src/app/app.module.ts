@@ -19,26 +19,26 @@ import { AchievementsComponent } from './components/achievements/achievements.co
 import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 import {SigninComponent} from "./components/signin/signin.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import { HomePageComponent } from './components/home-page/home-page.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { AchievementListComponent } from './components/achievement-list/achievement-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
     ProfileComponent,
     NavComponent,
     AchievementsComponent,
     LeaderboardComponent,
     SigninComponent,
-    HomepageComponent
+    HomepageComponent,
+    AchievementFilterComponent,
+    AchievementComponent,
+    AchievementListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HomePageComponent,
-    HomepageComponent,
     FlexLayoutModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
