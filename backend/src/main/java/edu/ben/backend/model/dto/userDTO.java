@@ -10,15 +10,16 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class userDTO {
 
-    String firstName;
-    String lastName;
+    String firstname;
+    String lastname;
     String email;
     String username;
     String password;
+    Long id;
 
-    public userDTO (String firstName, String lastName, String email, String username, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public userDTO (String firstname, String lastname, String email, String username, String password) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.email = email;
         this.username = username;
         this.password = password;
@@ -33,6 +34,12 @@ public class userDTO {
     }
 
     public userDTO(Long id, String username, String password, String email, String firstname, String lastname) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.firstname = firstname;
+        this.lastname = lastname;
 
     }
 }

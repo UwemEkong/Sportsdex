@@ -16,6 +16,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
+import {SigninComponent} from "./components/signin/signin.component";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { LeaderboardComponent } from './components/leaderboard/leaderboard.compo
     ProfileComponent,
     NavComponent,
     AchievementsComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { LeaderboardComponent } from './components/leaderboard/leaderboard.compo
     MatIconModule,
     MatProgressSpinnerModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
