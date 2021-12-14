@@ -18,6 +18,7 @@ import { AchievementsComponent } from './components/achievements/achievements.co
 import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 import {SigninComponent} from "./components/signin/signin.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     NavComponent,
     AchievementsComponent,
     LeaderboardComponent,
-    SigninComponent
+    SigninComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
