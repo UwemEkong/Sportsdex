@@ -10,3 +10,9 @@
     <a href="#" class="card-link">Locked Achievements</a>
   </div>
 </div>
+<div class="container-fluid">
+  <h1 class="unlocked-header">Unlocked Achievements</h1>
+</div>
+<div fxLayout="row">
+<app-achievement *ngFor="let achievement of this.achievementService.unlockedAchievements" [achievement]=achievement [isLocked]=false></app-achievement>
+</div>

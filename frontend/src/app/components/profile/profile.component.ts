@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AchievementsService } from 'src/app/services/achievements.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(public achievementService: AchievementsService) { }
 
   ngOnInit(): void {
+    this.achievementService.getUnlockedAchievements();
   }
 
 }

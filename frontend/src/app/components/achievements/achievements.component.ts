@@ -19,7 +19,7 @@ export class AchievementsComponent implements OnInit {
   }
 
    getAchievements() {
-    return this.achievementService.getAllAchievements();
+    return this.achievementService.getLockedAchievements();
 
   }
 

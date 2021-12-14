@@ -20,14 +20,14 @@ USE `SportsDex` ;
 -- -----------------------------------------------------
 -- Table `SportsDex`.`achievements`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `SportsDex`.`achievements` (
-  `idachievements` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `SportsDex`.`achievement` (
+  `id` INT NOT NULL auto_increment,
   `description` VARCHAR(100) NOT NULL,
   `points` INT NOT NULL,
   `team` VARCHAR(45) NOT NULL,
-  `imagePath` VARCHAR(255) NULL DEFAULT NULL,
-  PRIMARY KEY (`idachievements`),
-  UNIQUE INDEX `idachievements_UNIQUE` (`idachievements` ASC) VISIBLE)
+  `image` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
@@ -36,16 +36,14 @@ DEFAULT CHARACTER SET = utf8mb3;
 -- Table `SportsDex`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `SportsDex`.`user` (
-  `iduser` INT NOT NULL,
+  `id` INT NOT NULL auto_increment,
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
-  `firstName` VARCHAR(45) NOT NULL,
-  `lastName` VARCHAR(45) NOT NULL,
+  `firstname` VARCHAR(45) NOT NULL,
+  `lastname` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `first_name` VARCHAR(255) NULL DEFAULT NULL,
-  `last_name` VARCHAR(255) NULL DEFAULT NULL,
-  PRIMARY KEY (`iduser`),
-  UNIQUE INDEX `iduser_UNIQUE` (`iduser` ASC) VISIBLE,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
   UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE)
 ENGINE = InnoDB
@@ -55,11 +53,11 @@ DEFAULT CHARACTER SET = utf8mb3;
 -- -----------------------------------------------------
 -- Table `SportsDex`.`userAchievement`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `SportsDex`.`userAchievement` (
-  `userID` INT NOT NULL,
-  `achievementID` INT NOT NULL,
-  UNIQUE INDEX `userID_UNIQUE` (`userID` ASC) VISIBLE,
-  UNIQUE INDEX `cardID_UNIQUE` (`achievementID` ASC) VISIBLE)
+CREATE TABLE IF NOT EXISTS `SportsDex`.`userachievement` (
+  `id` INT NOT NULL auto_increment,
+  `user_id` INT NOT NULL,
+  `achievement_id` INT NOT NULL DEFAULT 0,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 

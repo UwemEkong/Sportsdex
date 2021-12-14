@@ -8,14 +8,17 @@ import lombok.ToString;
 @Data
 @ToString
 @EqualsAndHashCode
+@AllArgsConstructor
 public class userDTO {
 
+
+
+    Long id;
+    String username;
+    String password;
     String firstname;
     String lastname;
     String email;
-    String username;
-    String password;
-    Long id;
 
     public userDTO (String firstname, String lastname, String email, String username, String password) {
         this.firstname = firstname;
@@ -33,13 +36,5 @@ public class userDTO {
         this.username = username;
     }
 
-    public userDTO(Long id, String username, String password, String email, String firstname, String lastname) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.firstname = firstname;
-        this.lastname = lastname;
 
-    }
 }

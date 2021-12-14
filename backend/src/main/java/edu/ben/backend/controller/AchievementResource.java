@@ -1,13 +1,14 @@
 package edu.ben.backend.controller;
 
 import edu.ben.backend.model.Achievement;
+import edu.ben.backend.model.dto.AchievementDTO;
 import edu.ben.backend.service.AchievementService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping(value = "api/achievements", produces = "application/json")
+@RequestMapping(value = "api/achievement", produces = "application/json")
 public class AchievementResource {
 
     private final AchievementService achievementService;
@@ -16,8 +17,23 @@ public class AchievementResource {
         this.achievementService = achievementService;
     }
 
-    @GetMapping("getAchievements")
-    public void getAchievements() {
-        this.achievementService.getAllAchievements();
+    @GetMapping("/getLockedAchievements")
+    public List<AchievementDTO> getLockedAchievements() {
+        return this.achievementService.getLockedAchievements();
+    }
+
+    @GetMapping("/getUnlockedAchievements")
+    public List<AchievementDTO> getUnlockedAchievements() {
+        return this.achievementService.getUnlockedAchievements();
+    }
+
+    @GetMapping("/unlockAchievement/{achievementId}")
+    public void unlockAchievement(@PathVariable Long achievementId) {
+         this.achievementService.unlockAchievement(achievementId);
+    }
+
+    @DeleteMapping("/deleteUserAchievement/{achievementId}")
+    public void deleteUserAchievement(@PathVariable Long achievementId) {
+        this.achievementService.deleteUserAchievement(achievementId);
     }
 }
