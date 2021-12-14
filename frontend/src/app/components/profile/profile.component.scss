@@ -1,7 +1,43 @@
-.card {
-margin-left: 40%;
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: max(64px);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-  padding-top: 15px;
+.left {
+  left: 0;
+  margin-left: 0%;
+  display: block;
+  align-content: center;
+  text-align: center;
+  child-align: middle;
+}
+
+.right {
+  right: 0;
+  display: block;
+  align-content: center;
+  child-align: middle;
+
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  justify-content: center;
+  display: block;
+}
+
+.username-cont {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .unlocked-header {
@@ -10,3 +46,20 @@ margin-left: 40%;
   color: red;
   font-size:2rem;
 }
+
+.profile-pic {
+  width:10rem;
+  height:10rem;
+  border-radius: 50%;
+
+}
+
+.background {
+  padding-top:16%;
+}
+
+.img {
+  max-width:100%;
+  height:auto;
+}
+
