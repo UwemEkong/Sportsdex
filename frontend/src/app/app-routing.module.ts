@@ -7,6 +7,7 @@ import {LeaderboardComponent} from "./components/leaderboard/leaderboard.compone
 import {SigninComponent} from "./components/signin/signin.component";
 import {SignupComponent} from "./components/signup/signup.component";
 
+
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
   { path: '', component: SigninComponent},
