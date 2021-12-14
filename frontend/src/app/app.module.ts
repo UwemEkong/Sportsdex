@@ -35,7 +35,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     WelcomeComponent,
     AchievementFilterComponent,
     AchievementComponent,
-    AchievementListComponent
+    AchievementListComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
