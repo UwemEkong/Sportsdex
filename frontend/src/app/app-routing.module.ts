@@ -6,7 +6,7 @@ import {AchievementsComponent} from "./components/achievements/achievements.comp
 import {LeaderboardComponent} from "./components/leaderboard/leaderboard.component";
 import {SigninComponent} from "./components/signin/signin.component";
 import {SignupComponent} from "./components/signup/signup.component";
-
+import {WelcomeComponent} from "./components/welcome/welcome.component";
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'achievements', component: AchievementsComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'signup', component: SignupComponent},
+  {path: '**', component: WelcomeComponent},
 ];
 
 @NgModule({
