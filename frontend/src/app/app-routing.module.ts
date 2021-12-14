@@ -9,9 +9,11 @@ import {SignupComponent} from "./components/signup/signup.component";
 import {WelcomeComponent} from "./components/welcome/welcome.component";
 
 
+
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
   { path: 'signin', component: SigninComponent},
+  { path: '', component: SigninComponent},
   { path: 'profile', component: ProfileComponent},
   { path: 'achievements', component: AchievementsComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
