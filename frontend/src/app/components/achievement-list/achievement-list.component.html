@@ -6,7 +6,7 @@
 </div>
 <app-achievement-filter></app-achievement-filter>
 <div fxLayout="row">
-    <app-achievement *ngFor="let achievement of this.achievementService.lockedAchievements" [achievement]=achievement [isLocked]=true></app-achievement>
+    <app-achievement *ngFor="let achievement of this.achievementService.lockedAchievements" [achievement]=achievement [isLocked]=true [cardSize]=300></app-achievement>
 </div>
 <div class="custom-footer">
     <img src="../../assets/authhero.png">

@@ -45,13 +45,27 @@
   margin-top:30px;
   color: red;
   font-size:2rem;
+  font-weight:bold;
 }
 
 .profile-pic {
   width:10rem;
   height:10rem;
   border-radius: 50%;
+}
 
+.profile-pic-cont {
+  width:8rem;
+  height:8rem;
+  border-radius:50%;
+  background-size: cover;
+  background-image: url("/assets/download.jpg");
+  background-position: 50% 50%;
+  border: solid black;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 5px;
+  margin-top:20px;
 }
 
 .background {
@@ -61,5 +75,58 @@
 .img {
   max-width:100%;
   height:auto;
+}
+
+.profile-pic-col {
+  width:20%;
+  margin-left:40%;
+  margin-right:40%;
+  text-align:center;
+}
+
+.profile-pic-col img {
+  width:20%;
+}
+
+.profile-pic-row {
+  width:100%;
+  font-size:1.5rem;
+}
+
+.achievement-cont {
+  width:100%;
+  margin-right:0;
+}
+
+.unlocked-col {
+flex-wrap: wrap;
+}
+
+.locked-col {
+margin-right:0;
+flex-wrap: wrap;
+}
+
+.header-row {
+  width:100%;
+}
+
+.unlock-col {
+  text-align:center;
+  color: #83c2e7;
+}
+
+.unlock-col h1 {
+  font-size:2rem;
+  font-weight:bold;
+}
+
+.lock-col h1 {
+  font-size:2rem;
+  font-weight:bold;
+}
+
+.lock-col {
+  text-align:center;
 }
 

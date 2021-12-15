@@ -13,6 +13,7 @@ export class AchievementComponent implements OnInit {
 
   @Input() achievement = <Achievement>{};
   @Input() isLocked = false;
+  @Input() cardSize = 0;
 
   ngOnInit(): void {
   }

@@ -1,6 +1,6 @@
 <app-nav></app-nav>
 
-<div class="split left">
+<!-- <div class="split left">
   <div class="center">
 
     <img src="assets/download.jpg" class="profile-pic">
@@ -33,15 +33,34 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 
-
-<div class="container-fluid">
-  <h1 class="unlocked-header">Unlocked Achievements</h1>
+<div class= "row profile-pic-row">
+  <div class="col profile-pic-col">
+    <div class="profile-pic-cont"></div>
+    <p><b>Name:</b> Lonzo Ball</p>
+    <p><b>Username:</b> BigBaller123!</p>
+    <p><b>Email:</b> lonzo@ball.com</p>
+  </div>
 </div>
-<div fxLayout="row">
-  <app-achievement *ngFor="let achievement of this.achievementService.unlockedAchievements" [achievement]=achievement
-    [isLocked]=false></app-achievement>
+<div class="row header-row">
+  <div class="col unlock-col">
+    <h1>Unlocked Achievements</h1>
+  </div>
+  <div class="col lock-col">
+    <h1>Locked Achievements</h1>
+  </div>
+</div>
+<div class="row achievement-cont">
+  <div class="col-6 unlocked-col" fxLayout="col">
+    
+    <app-achievement *ngFor="let achievement of this.achievementService.unlockedAchievements" [achievement]=achievement
+    [isLocked]=false [cardSize]=200></app-achievement>
+  </div>
+  <div class="col-6 locked-col" fxLayout="col">
+    <app-achievement *ngFor="let achievement of this.achievementService.lockedAchievements" [achievement]=achievement
+    [isLocked]=true [cardSize]=200></app-achievement>
+  </div>
 </div>
 
 <div class="background">

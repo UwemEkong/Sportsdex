@@ -25,6 +25,7 @@ unlockedAchievements = <Achievement[]>[];
     this.httpClient.get<Achievement[]>('api/achievement/getUnlockedAchievements').subscribe(data => {
       console.log(data);
       this.unlockedAchievements = data;
+      this.getLockedAchievements();
     })
   }
 
