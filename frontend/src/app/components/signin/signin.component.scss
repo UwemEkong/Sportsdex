@@ -1,4 +1,4 @@
-chicago {
+.chicago {
   position: absolute;
   width: 1440px;
   height: 414.72px;
@@ -6,16 +6,16 @@ chicago {
   top: 609px;
 }
 
-baseball {
+.baseball {
   vertical-align: middle;
   floatLeft { float: left; }
 }
 
-flag {
+.flag {
   vertical-align: middle;
 }
 
-cubs {
+.cubs {
   vertical-align: middle;
 }
 
@@ -55,7 +55,7 @@ h4 {
   color: #FFFFFF;
 }
 
-createaccount {
+.createaccount {
   position: absolute;
   left: 0%;
   right: 0%;
@@ -97,4 +97,12 @@ form {
 }
 
 .button3 {border-radius: 8px;}
+
+.footer-img {
+  width: 100%;
+}
+
+.footer-img img {
+  width: 100%;
+}
 

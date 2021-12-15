@@ -1,11 +1,13 @@
 <app-nav></app-nav>
 
-<div class="split left">
+<!-- <div class="split left">
   <div class="center">
 
     <img src="assets/download.jpg" class="profile-pic">
     <br><br>
-    <div class="username-cont"><div class="username">{{this.authServivce.loggedInUser.username}}</div></div>
+    <div class="username-cont">
+      <div class="username">{{this.authServivce.loggedInUser.username}}</div>
+    </div>
     <br>
     <h3 id="header">UNLOCKED ACHIEVEMENTS</h3>
     <ul class="list-group">
@@ -16,24 +18,51 @@
       <li class="list-group-item">Achievement</li>
     </ul>
   </div>
+</div>
 
-  <div class="split right">
-    <div class="center">
-      <div>
-        <h3>LOCKED ACHIEVEMENTS</h3>
-        <ul class="list-group">
-          <li class="list-group-item">Achievement</li>
-          <li class="list-group-item">Achievement</li>
-          <li class="list-group-item">Achievement</li>
-          <li class="list-group-item">Achievement</li>
-          <li class="list-group-item">Achievement</li>
-        </ul>
-      </div>
+<div class="split right">
+  <div class="center">
+    <div>
+      <h3>LOCKED ACHIEVEMENTS</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Achievement</li>
+        <li class="list-group-item">Achievement</li>
+        <li class="list-group-item">Achievement</li>
+        <li class="list-group-item">Achievement</li>
+        <li class="list-group-item">Achievement</li>
+      </ul>
     </div>
+  </div>
+</div> -->
+
+<div class= "row profile-pic-row">
+  <div class="col profile-pic-col">
+    <div class="profile-pic-cont"></div>
+    <p><b>Name:</b> Lonzo Ball</p>
+    <p><b>Username:</b> BigBaller123!</p>
+    <p><b>Email:</b> lonzo@ball.com</p>
+  </div>
+</div>
+<div class="row header-row">
+  <div class="col unlock-col">
+    <h1>Unlocked Achievements</h1>
+  </div>
+  <div class="col lock-col">
+    <h1>Locked Achievements</h1>
+  </div>
+</div>
+<div class="row achievement-cont">
+  <div class="col-6 unlocked-col" fxLayout="col">
+    
+    <app-achievement *ngFor="let achievement of this.achievementService.unlockedAchievements" [achievement]=achievement
+    [isLocked]=false [cardSize]=200></app-achievement>
+  </div>
+  <div class="col-6 locked-col" fxLayout="col">
+    <app-achievement *ngFor="let achievement of this.achievementService.lockedAchievements" [achievement]=achievement
+    [isLocked]=true [cardSize]=200></app-achievement>
   </div>
 </div>
 
 <div class="background">
   <img src="assets/authhero.png" class="img">
 </div>
-
