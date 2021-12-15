@@ -22,6 +22,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { AchievementListComponent } from './components/achievement-list/achievement-list.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     MatIconModule,
     MatProgressSpinnerModule,
     MatCardModule,
+    MatSnackBarModule,
     MatToolbarModule,
     HttpClientModule
   ],
