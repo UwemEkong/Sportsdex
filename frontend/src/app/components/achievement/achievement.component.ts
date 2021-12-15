@@ -24,6 +24,8 @@ export class AchievementComponent implements OnInit {
     this.playAudio();
     this._snackBar.open("Achievement Unlocked","", {
       duration: 1000,
+      verticalPosition: 'top',
+      panelClass: ['green-snackbar']
     });
   }
 
