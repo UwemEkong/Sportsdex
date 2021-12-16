@@ -29,6 +29,7 @@ import { DialogExampleComponent } from './components/dialog-example/dialog-examp
 import { MatButtonModule } from '@angular/material/button';
 import { CustomSnackbarComponent } from './components/custom-snackbar/custom-snackbar.component';
 import { DialogRemoveComponent } from './components/dialog-remove/dialog-remove.component';
+import {SignupComponent} from "./components/signup/signup.component";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { DialogRemoveComponent } from './components/dialog-remove/dialog-remove.
     AchievementListItemComponent,
     DialogExampleComponent,
     CustomSnackbarComponent,
-    DialogRemoveComponent
+    DialogRemoveComponent,
+    SignupComponent
   ],
   entryComponents:[DialogExampleComponent, CustomSnackbarComponent],
   imports: [

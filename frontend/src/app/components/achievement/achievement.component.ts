@@ -11,14 +11,12 @@ import { DialogRemoveComponent } from '../dialog-remove/dialog-remove.component'
   templateUrl: './achievement.component.html',
   styleUrls: ['./achievement.component.scss']
 })
-export class AchievementComponent implements OnInit {
 
+export class AchievementComponent implements OnInit {
   constructor(public achievementService: AchievementsService, private _snackBar: MatSnackBar, public dialog: MatDialog) { }
-  durationInSeconds = 5;
   @Input() achievement = <Achievement>{};
   @Input() isLocked = false;
   @Input() cardSize = 0;
-
   ngOnInit(): void {
   }
 
@@ -38,5 +36,20 @@ export class AchievementComponent implements OnInit {
   deleteUserAchievement() {
     this.achievementService.selectedAchievement = this.achievement;
     let dialogRef = this.dialog.open(DialogRemoveComponent);
+  }
+
+  achievementPointColor(points: String | undefined) {
+    if(points == '10') {
+      points = 'gold';
+    }
+
+    if(points == '5') {
+      points = 'silver';
+    }
+
+    if(points == '1') {
+      points = 'bronze';
+    }
+    return points;
   }
 }

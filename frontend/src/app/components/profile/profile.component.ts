@@ -14,6 +14,8 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this.achievementService.getUnlockedAchievements();
     this.achievementService.getLockedAchievements();
+    this.authServivce.getLoggedInUser();
+
   }
 
 }

@@ -23,6 +23,7 @@ class AuthResource {
 
     @PostMapping("/register")
     public void createEmployee(@RequestBody userDTO userDTO) {
+
         this.authenticationService.register(userDTO);
     }
 
