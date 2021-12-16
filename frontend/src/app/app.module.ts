@@ -30,6 +30,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CustomSnackbarComponent } from './components/custom-snackbar/custom-snackbar.component';
 import { DialogRemoveComponent } from './components/dialog-remove/dialog-remove.component';
 import {SignupComponent} from "./components/signup/signup.component";
+import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {SignupComponent} from "./components/signup/signup.component";
     DialogExampleComponent,
     CustomSnackbarComponent,
     DialogRemoveComponent,
-    SignupComponent
+    SignupComponent,
+    InfoDialogComponent
   ],
   entryComponents:[DialogExampleComponent, CustomSnackbarComponent],
   imports: [

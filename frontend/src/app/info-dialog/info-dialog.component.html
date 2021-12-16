@@ -1,0 +1,20 @@
+<div class="dialog-cont">
+    <h2 mat-dialog-title>Achievement Information</h2>
+
+        <div class="img-cont"
+            [ngStyle]="{'background-image': 'url(' + achievement.image + ')', 'background-position': '50% 50%', 'border': '5px' + ' ' + 'solid ' + achievementPointColor(this.achievement.points)}">
+        </div>
+
+    <p><b>Achievement: </b>{{this.achievementService.selectedAchievement.description}}
+    </p>
+    <p><b>Team: </b>{{this.achievementService.selectedAchievement.team}}
+    </p>
+    <p><b>Points:</b> {{this.achievementService.selectedAchievement.points}}</p>
+    <p><b>Rarity:</b> {{this.rarity}}</p>
+    <img src="{{this.badge}}">
+    <mat-dialog-actions>
+        <button mat-button color="basic" mat-dialog-close>
+            <mat-icon>cancel</mat-icon>Close
+        </button>
+    </mat-dialog-actions>
+</div>

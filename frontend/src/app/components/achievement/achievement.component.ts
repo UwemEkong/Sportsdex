@@ -5,6 +5,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogExampleComponent } from '../dialog-example/dialog-example.component';
 import { DialogRemoveComponent } from '../dialog-remove/dialog-remove.component';
+import { InfoDialogComponent } from 'src/app/info-dialog/info-dialog.component';
 
 @Component({
   selector: 'app-achievement',
@@ -51,5 +52,10 @@ export class AchievementComponent implements OnInit {
       points = 'bronze';
     }
     return points;
+  }
+
+  openInfoDialog() {
+    this.achievementService.selectedAchievement = this.achievement;
+    let infoDialog = this.dialog.open(InfoDialogComponent);
   }
 }
