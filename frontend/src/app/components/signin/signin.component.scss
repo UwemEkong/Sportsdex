@@ -1,11 +1,3 @@
-.chicago {
-  position: absolute;
-  width: 1440px;
-  height: 414.72px;
-  left: 0px;
-  top: 609px;
-}
-
 .baseball {
   vertical-align: middle;
   floatLeft { float: left; }
@@ -46,7 +38,6 @@ h4 {
   left: 3.35%;
   right: 3.35%;
   top: 14.04%;
-  bottom: 12.28%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -78,31 +69,54 @@ form {
   margin-right: auto;
 }
 
-.button {
+button {
   background-color: orangered;
   border: none;
   color: white;
   padding: 20px;
   text-decoration: none;
-  display: inline-block;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 16px;
-  margin: 4px 2px;
   cursor: pointer;
-  width: 269px;
-  height: 57px;
+  border-radius: 20px;
 }
 
 .button3 {border-radius: 8px;}
 
-.footer-img {
-  width: 100%;
+.chicago {
+  left: 0px;
+  bottom: 0;
 }
 
+
+
 .footer-img img {
-  width: 100%;
+  width:100%;;
+  height:auto;
+
+}
+
+.header-cont {
+  height:20%;
+
+}
+
+.login-cont {
+  text-align:center;
+  height:30%;
+}
+
+.footer-img {
+
+  height:50%;
+  text-align:center;
+}
+
+.login-cont {
+
+  position:relative;
 }
 

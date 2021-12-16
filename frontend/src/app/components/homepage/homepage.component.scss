@@ -4,27 +4,27 @@
 
 
 .banner-container img {
-  width:100%;
+  width:60%;
+  margin-left:20%;
+  margin-right:20%;
   margin-top:20px;
 }
 
 #list {
-  margin-left: 60%;
-  margin-right: 2%;
+
 }
 
 #myachiev {
-  margin-right: 60%;
-  margin-left: 2%;
+
 }
 .col-container {
   padding-top: 10px;
-  display: table;
-  width: 100%;
+
+width:100%;
 }
 .col {
-  display: table-cell;
-  width: 25%;
+
+
 }
 
 #star {
@@ -40,5 +40,17 @@
 }
 
 #locked {
-  width: 50%;
+  // width: 50%;
+}
+
+.footer-img {
+
+  height:50%;
+  text-align:center;
+}
+
+.footer-img img {
+  width:100%;;
+  height:auto;
+
 }

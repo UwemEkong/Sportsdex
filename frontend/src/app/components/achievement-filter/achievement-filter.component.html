@@ -1,14 +1,13 @@
 <div class="form-container">
     <form #filterData="ngForm" (ngSubmit)="filterAchievements(filterData)" novalidate>
         <div class="form-group">
-        <div class="row row-cont">
-            <div class="col-2 input-col">
-                <input class="form-control filter-input" name="filterName" value="filterName" id="filterName" ngModel="">
-            </div>
-            <div class="col-10 btn-col">
-                <button class="filter-btn">Filter By Team!</button>
-            </div>
-        </div>
+
+            <input class="form-control filter-input" name="filterName" value="filterName" id="filterName" ngModel="">
+
+
+            <button class="filter-btn">Filter By Team!</button>
+
+
         </div>
     </form>
 </div>

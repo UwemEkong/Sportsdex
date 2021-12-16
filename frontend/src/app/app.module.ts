@@ -23,6 +23,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { AchievementListComponent } from './components/achievement-list/achievement-list.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { AchievementListItemComponent } from './components/achievement-list-item/achievement-list-item.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     AchievementFilterComponent,
     AchievementComponent,
     AchievementListComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AchievementListItemComponent
   ],
   imports: [
     BrowserModule,

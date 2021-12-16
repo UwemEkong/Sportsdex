@@ -33,6 +33,7 @@ unlockedAchievements = <Achievement[]>[];
     this.httpClient.get(`api/achievement/unlockAchievement/${achievement.id}`).subscribe(data => {
       console.log(data);
       this.getLockedAchievements();
+      this.getUnlockedAchievements();
     })
   }
 
