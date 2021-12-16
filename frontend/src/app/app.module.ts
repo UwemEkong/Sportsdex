@@ -24,6 +24,11 @@ import { AchievementListComponent } from './components/achievement-list/achievem
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { AchievementListItemComponent } from './components/achievement-list-item/achievement-list-item.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
+import { MatButtonModule } from '@angular/material/button';
+import { CustomSnackbarComponent } from './components/custom-snackbar/custom-snackbar.component';
+import { DialogRemoveComponent } from './components/dialog-remove/dialog-remove.component';
 import {SignupComponent} from "./components/signup/signup.component";
 
 @NgModule({
@@ -41,8 +46,12 @@ import {SignupComponent} from "./components/signup/signup.component";
     AchievementListComponent,
     WelcomeComponent,
     AchievementListItemComponent,
+    DialogExampleComponent,
+    CustomSnackbarComponent,
+    DialogRemoveComponent,
     SignupComponent
   ],
+  entryComponents:[DialogExampleComponent, CustomSnackbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -56,7 +65,9 @@ import {SignupComponent} from "./components/signup/signup.component";
     MatCardModule,
     MatSnackBarModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

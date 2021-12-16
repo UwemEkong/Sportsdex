@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Are You Sure You Want To Remove This Achievement?</h2>
+<mat-dialog-content>Attempting to remove: <b>{{this.achievementService.selectedAchievement.description}}</b></mat-dialog-content>
+<mat-dialog-actions>
+    <button (click)="remove()" mat-button color="primary" mat-dialog-close><mat-icon>check_circle</mat-icon>Confirm!</button>
+    <button mat-button color="warn" mat-dialog-close><mat-icon>cancel</mat-icon>Cancel</button>
+</mat-dialog-actions>
