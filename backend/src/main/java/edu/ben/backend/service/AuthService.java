@@ -66,6 +66,8 @@ public class AuthService {
     }
 
     public userDTO getLoggedInUser() {
+        System.out.println(loggedInUser);
+
         return loggedInUser;
     }
 }

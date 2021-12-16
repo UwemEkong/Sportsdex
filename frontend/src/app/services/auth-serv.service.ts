@@ -41,7 +41,17 @@ export class AuthServService {
     })
   }
 
+  // getLoggedInUser() {
+  //   this.httpClient.get<User>('api/auth/getloggedinuser').subscribe((data: User) => {
+  //     console.log(data)
+  //     this.loggedInUser = data;
+  //   }
+  // }
+
   getLoggedInUser() {
-    return this.httpClient.get<User>('api/auth/getloggedinuser')
+    this.httpClient.get<User>('api/auth/getloggedinuser').subscribe((data) => {
+      console.log("User data " + JSON.stringify(data))
+      this.loggedInUser = data
+    })
   }
 }
