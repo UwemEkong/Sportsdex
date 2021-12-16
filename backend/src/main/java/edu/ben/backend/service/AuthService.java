@@ -35,6 +35,7 @@ public class AuthService {
     }
 
     public void register(userDTO userDTO) {
+        System.out.println("Registering: " + userDTO);
         user existingUser = userRepository.findByUsername(userDTO.getUsername());
 
         if (existingUser != null) {

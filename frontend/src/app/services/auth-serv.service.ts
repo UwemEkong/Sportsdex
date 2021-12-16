@@ -34,8 +34,10 @@ export class AuthServService {
   }
 
   register(user:User) {
+    console.log('REGISTERING USER: ' + JSON.stringify(user))
+
     this.httpClient.post<User>('api/auth/register', user).subscribe(() => {
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl('');
     })
   }
 

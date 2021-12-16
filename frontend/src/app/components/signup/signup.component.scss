@@ -60,43 +60,29 @@ h4 {
   color: #FFFFFF;
 }
 
-createaccount {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: #003764;
-  border-radius: 20.5948px;
-}
+
 
 bears {
   vertical-align: middle;
 }
 
-body {
-  text-align: center;
-  white-space: pre;
 
-}
 
-input {
-  height: 20px;
-  flex: 0 0 200px;
-  margin-left: 10px;
-}
+
 
 .center {
   margin-left: auto;
   margin-right: auto;
 }
 
+
+
 .register-lbl {
   text-align:left;
 }
 
 .register-btn {
-  width:25%;
+  width:50%;
   margin-bottom:10%;
   background-color: #1877F2;
   color:white;
@@ -108,17 +94,24 @@ input {
   height:50px;
 }
 
+.login-btn {
+  width:25%;
+  background-color: #42B72A;
+  color:white;
+  font-family: "Helvetica", sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  border: none;
+  border-radius:5px;
+  height:50px;
+  margin-left: 37.5%;
+}
+
 .form {
+  margin-left: 25%;
+  width: 50%;
   text-align: center;
+  display: block;
 }
 
-.form-label {
-  width: 25%;
-}
 
-.form-control {
-  width: 25%;
-}
-.row-email {
-  align-content: center;
-}

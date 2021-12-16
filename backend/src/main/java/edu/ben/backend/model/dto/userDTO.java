@@ -36,5 +36,7 @@ public class userDTO {
         this.username = username;
     }
 
+    public userDTO(){}
+
 
 }
