@@ -2,13 +2,7 @@
     color:#EC0000;
     font-weight: bold;
     font-size:24px;
-    margin-left:3%;
-}
 
-.filter-input {
-    width:80%;
-    margin-left:50px;
-    float:right;
 }
 
 .filter-btn {
@@ -17,12 +11,29 @@
     color:white;
     border-color: #EC0000;
     border-style: solid;
-    font-size:20px;
+    font-size:16px;
     font-weight:bold;
-    float:left;
-    margin-left:0px;
+    margin-top:10px;
 }
 
 .row-cont {
     width: 100%;
+
+}
+
+.form-container {
+
+}
+
+.form-container form {
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align:center;
+}
+
+input {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
 }

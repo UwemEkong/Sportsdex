@@ -5,9 +5,6 @@
     <p>Selected Team: Chicago Bulls</p>
 </div>
 <app-achievement-filter></app-achievement-filter>
-<div fxLayout="row">
+<div fxLayout="row custom-row">
     <app-achievement *ngFor="let achievement of this.achievementService.lockedAchievements" [achievement]=achievement [isLocked]=true [cardSize]=200></app-achievement>
-</div>
-<div class="custom-footer">
-    <img src="../../assets/authhero.png">
 </div>
