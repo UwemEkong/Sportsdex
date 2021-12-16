@@ -16,9 +16,10 @@ public class userDTO {
     Long id;
     String username;
     String password;
+    String email;
     String firstname;
     String lastname;
-    String email;
+
 
     public userDTO (String firstname, String lastname, String email, String username, String password) {
         this.firstname = firstname;
@@ -35,6 +36,8 @@ public class userDTO {
     public userDTO(String username) {
         this.username = username;
     }
+
+    public userDTO(){}
 
 
 }

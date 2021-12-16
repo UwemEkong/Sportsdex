@@ -38,9 +38,9 @@
 <div class= "row profile-pic-row">
   <div class="col profile-pic-col">
     <div class="profile-pic-cont"></div>
-    <p><b>Name:</b> Lonzo Ball</p>
-    <p><b>Username:</b> BigBaller123!</p>
-    <p><b>Email:</b> lonzo@ball.com</p>
+    <p><b>Name:</b> {{this.authServivce.loggedInUser.firstname + ' ' +  this.authServivce.loggedInUser.lastname}}</p>
+    <p><b>Username:</b>{{this.authServivce.loggedInUser.username}}</p>
+    <p><b>Email:</b>{{this.authServivce.loggedInUser.email}}</p>
   </div>
 </div>
 <div class="row header-row">
@@ -53,7 +53,7 @@
 </div>
 <div class="row achievement-cont">
   <div class="col-6 unlocked-col" fxLayout="col">
-    
+
     <app-achievement *ngFor="let achievement of this.achievementService.unlockedAchievements" [achievement]=achievement
     [isLocked]=false [cardSize]=200></app-achievement>
   </div>

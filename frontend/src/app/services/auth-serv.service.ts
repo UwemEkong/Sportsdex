@@ -34,12 +34,24 @@ export class AuthServService {
   }
 
   register(user:User) {
+    console.log('REGISTERING USER: ' + JSON.stringify(user))
+
     this.httpClient.post<User>('api/auth/register', user).subscribe(() => {
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl('');
     })
   }
 
+  // getLoggedInUser() {
+  //   this.httpClient.get<User>('api/auth/getloggedinuser').subscribe((data: User) => {
+  //     console.log(data)
+  //     this.loggedInUser = data;
+  //   }
+  // }
+
   getLoggedInUser() {
-    return this.httpClient.get<User>('api/auth/getloggedinuser')
+    this.httpClient.get<User>('api/auth/getloggedinuser').subscribe((data) => {
+      console.log("User data " + JSON.stringify(data))
+      this.loggedInUser = data
+    })
   }
 }

@@ -24,6 +24,7 @@ import { AchievementListComponent } from './components/achievement-list/achievem
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { AchievementListItemComponent } from './components/achievement-list-item/achievement-list-item.component';
+import {SignupComponent} from "./components/signup/signup.component";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AchievementListItemComponent } from './components/achievement-list-item
     AchievementComponent,
     AchievementListComponent,
     WelcomeComponent,
-    AchievementListItemComponent
+    AchievementListItemComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
