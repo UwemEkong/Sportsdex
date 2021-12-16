@@ -91,31 +91,34 @@ input {
   margin-right: auto;
 }
 
-.button {
-  background-color: #003764;
+.register-lbl {
+  text-align:left;
+}
+
+.register-btn {
+  width:25%;
+  margin-bottom:10%;
+  background-color: #1877F2;
+  color:white;
+  font-family: "Helvetica", sans-serif;
+  font-size:20px;
+  font-weight:bold;
   border: none;
-  color: white;
-  padding: 20px;
-  text-indent: -5px;
-  text-decoration: none;
-  display: inline-block;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 269px;
-  height: 57px;
+  border-radius:5px;
+  height:50px;
 }
 
-.button3 {border-radius: 8px;}
-
-.label1 {
-  margin-right: 105px;
+.form {
+  text-align: center;
 }
 
-.label2 {
-  margin-right: 130px;
+.form-label {
+  width: 25%;
+}
+
+.form-control {
+  width: 25%;
+}
+.row-email {
+  align-content: center;
 }
