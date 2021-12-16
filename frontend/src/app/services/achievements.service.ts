@@ -13,7 +13,7 @@ export class AchievementsService {
 
 lockedAchievements = <Achievement[]>[];
 unlockedAchievements = <Achievement[]>[];
-
+selectedAchievement = <Achievement>{};
   getLockedAchievements() {
     this.httpClient.get<Achievement[]>('api/achievement/getLockedAchievements').subscribe(data => {
       console.log(data);

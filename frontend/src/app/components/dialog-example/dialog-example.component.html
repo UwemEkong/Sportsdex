@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Please Confirm New Achievement Unlock</h2>
+<mat-dialog-content>Attempting to unlock: <b>{{this.achievementService.selectedAchievement.description}}</b></mat-dialog-content>
+<mat-dialog-actions>
+    <button (click)="unlock()" mat-button color="primary" mat-dialog-close><mat-icon>check_circle</mat-icon>Confirm!</button>
+    <button mat-button color="warn" mat-dialog-close><mat-icon>cancel</mat-icon>Cancel</button>
+</mat-dialog-actions>
