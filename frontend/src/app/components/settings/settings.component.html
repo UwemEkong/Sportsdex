@@ -1,0 +1,50 @@
+<app-nav></app-nav>
+<div class="settings-cont">
+    <h1 class="settings-header">User Details</h1>
+</div>
+<div class= "row profile-pic-row">
+    <div class="col profile-pic-col">
+      <div class="profile-pic-cont" [ngStyle]="{'background-image': 'url(' + this.authServivce.selectedImage + ')', 'background-position': '50% 50%'}"></div>
+      <p>{{this.authServivce.loggedInUser.firstname + ' ' +  this.authServivce.loggedInUser.lastname}}</p>
+    </div>
+  </div>
+
+  <div class="form-cont">
+    <form  #userData="ngForm" (ngSubmit)="editUser(userData)" novalidate>
+      <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="firstname"><b>First Name</b></label>
+                <input class="form-control login-input" name="firstname" id="firstname" ngModel="{{this.authServivce.loggedInUser.firstname}}">
+              </div>
+              <div class="form-group">
+                <label for="lastname"><b>Last Name</b></label>
+                <input class="form-control login-input" name="lastname" id="lastname" ngModel="{{this.authServivce.loggedInUser.lastname}}">
+              </div>
+              <div class="form-group">
+                <label for="username"><b>Username</b></label>
+                <input class="form-control login-input" name="username" id="username" ngModel="{{this.authServivce.loggedInUser.username}}">
+              </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input class="form-control login-input" name="email" id="email" ngModel="{{this.authServivce.loggedInUser.email}}">
+              </div>
+              <div class="form-group">
+                <label for="favoriteteam"><b>Favorite Team</b></label>
+                <input class="form-control login-input" name="favoriteteam" id="favoriteteam" ngModel="{{this.authServivce.loggedInUser.favoriteteam}}">
+              </div>
+              <div class="form-group">
+                <label for="username"><b>Password</b></label>
+                <input class="form-control login-input" type="password"  name="password" id="password" ngModel="{{this.authServivce.loggedInUser.password}}">
+              </div>
+        </div>
+      </div>
+      <button class="edit-btn"><mat-icon class="btn-icon">settings</mat-icon> Edit!</button>
+    </form>
+  </div>
+
+  <div class=" footer-img">
+    <img src="../../assets/authhero.png" class="chicago">
+  </div>

@@ -59,8 +59,6 @@
   height:8rem;
   border-radius:50%;
   background-size: cover;
-  background-image: url("/assets/download.jpg");
-  background-position: 50% 50%;
   border: solid black;
   margin-left:auto;
   margin-right:auto;
@@ -68,19 +66,10 @@
   margin-top:20px;
 }
 
-.background {
-  padding-top:16%;
-}
-
-.img {
-  max-width:100%;
-  height:auto;
-}
-
 .profile-pic-col {
-  width:20%;
-  margin-left:40%;
-  margin-right:40%;
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
   text-align:center;
 }
 
@@ -91,6 +80,15 @@
 .profile-pic-row {
   width:100%;
   font-size:1.5rem;
+}
+
+.background {
+  padding-top:16%;
+}
+
+.img {
+  max-width:100%;
+  height:auto;
 }
 
 .achievement-cont {
@@ -128,5 +126,9 @@ flex-wrap: wrap;
 
 .lock-col {
   text-align:center;
+}
+
+.settings-icon {
+  cursor:pointer;
 }
 
