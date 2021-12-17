@@ -5,7 +5,7 @@
             <input class="form-control filter-input" name="filterName" value="filterName" id="filterName" ngModel required #team="ngModel">
 
             <button class="filter-btn">Filter By Team!</button>
-
+            <p (click)="showSchedule()"class="show-schedule" *ngIf="hasSearched">See Upcoming {{filterName}} Games</p>
         </div>
     </form>
 </div>
