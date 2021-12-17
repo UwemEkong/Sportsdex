@@ -2,9 +2,12 @@ package edu.ben.backend.controller;
 
 import edu.ben.backend.model.Achievement;
 import edu.ben.backend.model.dto.AchievementDTO;
+import edu.ben.backend.model.dto.userDTO;
+import edu.ben.backend.model.userRating;
 import edu.ben.backend.service.AchievementService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -41,4 +44,14 @@ public class AchievementResource {
     public List<AchievementDTO> getFilteredAchievements(@PathVariable String team) {
         return this.achievementService.getFilteredData(team);
     }
+
+    @GetMapping("/getLeaderboard")
+    public List<userDTO> getLeaderboard() {
+        return this.achievementService.getLeaderboard();
+    }
+
+    @GetMapping("/getUserAch/")
+        public List<userRating> getUserAch() {
+        return this.achievementService.getNumUnlockedAch();
+        }
 }
