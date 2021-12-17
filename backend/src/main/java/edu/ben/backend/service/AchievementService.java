@@ -153,7 +153,8 @@ public class AchievementService {
         }
         List<userRating> answer = new ArrayList<>();
         for (Long id: userMapping.keySet()) {
-            answer.add(new userRating(id, userMapping.get(id)));
+            user user = userRepository.getById(id);
+            answer.add(new userRating(id, userMapping.get(id), user.getUsername()));
         }
         answer.sort(Comparator.comparing(userRating::getTotalAchiev).reversed());
 
