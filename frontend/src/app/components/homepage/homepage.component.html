@@ -16,17 +16,15 @@
     <ul class="list-group" id="list">
      <p id="label">Most Achieved Fans</p>
       <li class="list-group-item d-flex justify-content-between align-items-center">
-      BullsFan101
-      <span class="badge badge-primary badge-pill">14</span>
+        <tr *ngFor="let user of this.achievementService.leaderboard; let i = index">
+          {{user.username}}
+        </tr>
+      <span class="badge badge-primary badge-pill">
+          <tr *ngFor="let userRating of this.achievementService.numUnlocked; let i = index">
+          {{userRating.totalAchiev}}
+        </tr>
+      </span>
       </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-      CubbieLover
-      <span class="badge badge-primary badge-pill">2</span>
-    </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    SoxNation
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
   </ul>
   </div>
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from "../../interfaces/User";
+import {AchievementsService} from "../../services/achievements.service";
 
 @Component({
   selector: 'app-leaderboard',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeaderboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public achievementServ: AchievementsService) {
+    this.achievementServ = achievementServ;
+  }
 
   ngOnInit(): void {
+    this.achievementServ.getLeaderbooard();
   }
+
+
+
+
 
 }
