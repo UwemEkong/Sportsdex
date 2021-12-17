@@ -27,6 +27,12 @@ class AuthResource {
         this.authenticationService.register(userDTO);
     }
 
+    @PostMapping("/edituser")
+    public void editUser(@RequestBody userDTO userDTO) {
+
+        this.authenticationService.editUser(userDTO);
+    }
+
     @GetMapping("/getloggedinuser")
     public userDTO getLoggedInUser() {
         return this.authenticationService.getLoggedInUser();

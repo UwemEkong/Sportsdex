@@ -7,6 +7,7 @@ import {LeaderboardComponent} from "./components/leaderboard/leaderboard.compone
 import {SigninComponent} from "./components/signin/signin.component";
 import {SignupComponent} from "./components/signup/signup.component";
 import {WelcomeComponent} from "./components/welcome/welcome.component";
+import { SettingsComponent } from './components/settings/settings.component';
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'achievements', component: AchievementsComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'signup', component: SignupComponent},
+  {path: 'settings', component: SettingsComponent},
   {path: '**', component: WelcomeComponent},
 ];
 

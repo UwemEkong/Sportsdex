@@ -1,46 +1,12 @@
 <app-nav></app-nav>
-
-<!-- <div class="split left">
-  <div class="center">
-
-    <img src="assets/download.jpg" class="profile-pic">
-    <br><br>
-    <div class="username-cont">
-      <div class="username">{{this.authServivce.loggedInUser.username}}</div>
-    </div>
-    <br>
-    <h3 id="header">UNLOCKED ACHIEVEMENTS</h3>
-    <ul class="list-group">
-      <li class="list-group-item">Achievement</li>
-      <li class="list-group-item">Achievement</li>
-      <li class="list-group-item">Achievement</li>
-      <li class="list-group-item">Achievement</li>
-      <li class="list-group-item">Achievement</li>
-    </ul>
-  </div>
-</div>
-
-<div class="split right">
-  <div class="center">
-    <div>
-      <h3>LOCKED ACHIEVEMENTS</h3>
-      <ul class="list-group">
-        <li class="list-group-item">Achievement</li>
-        <li class="list-group-item">Achievement</li>
-        <li class="list-group-item">Achievement</li>
-        <li class="list-group-item">Achievement</li>
-        <li class="list-group-item">Achievement</li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-
 <div class= "row profile-pic-row">
   <div class="col profile-pic-col">
-    <div class="profile-pic-cont"></div>
-    <p><b>Name:</b> {{this.authServivce.loggedInUser.firstname + ' ' +  this.authServivce.loggedInUser.lastname}}</p>
-    <p><b>Username:</b>{{this.authServivce.loggedInUser.username}}</p>
-    <p><b>Email:</b>{{this.authServivce.loggedInUser.email}}</p>
+    <div class="profile-pic-cont" [ngStyle]="{'background-image': 'url(' + this.authServivce.selectedImage + ')', 'background-position': '50% 50%'}"></div>
+    <mat-icon class="settings-icon" (click)="goToSettings()">settings</mat-icon>
+    <p><b>Name: </b> {{this.authServivce.loggedInUser.firstname + ' ' +  this.authServivce.loggedInUser.lastname}}</p>
+    <p><b>Username: </b>{{this.authServivce.loggedInUser.username}}</p>
+    <p><b>Favorite Team: </b>{{this.authServivce.loggedInUser.favoriteteam}}</p>
+    <p><b>Email: </b>{{this.authServivce.loggedInUser.email}}</p>
   </div>
 </div>
 <div class="row header-row">

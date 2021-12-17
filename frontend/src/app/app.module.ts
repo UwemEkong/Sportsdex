@@ -31,6 +31,7 @@ import { CustomSnackbarComponent } from './components/custom-snackbar/custom-sna
 import { DialogRemoveComponent } from './components/dialog-remove/dialog-remove.component';
 import {SignupComponent} from "./components/signup/signup.component";
 import { InfoDialogComponent } from './info-dialog/info-dialog.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { InfoDialogComponent } from './info-dialog/info-dialog.component';
     CustomSnackbarComponent,
     DialogRemoveComponent,
     SignupComponent,
-    InfoDialogComponent
+    InfoDialogComponent,
+    SettingsComponent
   ],
   entryComponents:[DialogExampleComponent, CustomSnackbarComponent],
   imports: [

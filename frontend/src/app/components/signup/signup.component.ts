@@ -12,13 +12,12 @@ export class SignupComponent implements OnInit {
 
 
   constructor(public authServ: AuthServService) {
-    this.authServ = authServ;
   }
 
   ngOnInit(): void {
   }
 
   register(userData: any) {
-    this.authServ.register({firstname: userData.value.firstname, lastname: userData.value.lastname, email: userData.value.email, username: userData.value.username, password: userData.value.password});
+    this.authServ.register({firstname: userData.value.firstname, lastname: userData.value.lastname, email: userData.value.email, favoriteteam: userData.value.team, username: userData.value.username, password: userData.value.password});
   }
 }
