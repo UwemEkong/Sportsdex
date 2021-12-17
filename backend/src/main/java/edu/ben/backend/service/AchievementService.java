@@ -65,6 +65,15 @@ public class AchievementService {
         return locked;
     }
 
+    public List<AchievementDTO> getFilteredData(String team) {
+        List<Achievement> locked = achievementRepository.findByTeam(team);
+        List<AchievementDTO> answer = new ArrayList<>();
+        for (Achievement achievement:locked) {
+            answer.add(new AchievementDTO(achievement.getId(), achievement.getDescription(), achievement.getPoints(), achievement.getTeam(), achievement.getImage()));
+        }
+        return answer;
+    }
+
     private boolean isLocked(Achievement achievement, List<UserAchievement> unlocked) {
         for (UserAchievement userAchievement: unlocked) {
             if (achievement.getId() == userAchievement.getAchievementId()) {

@@ -36,4 +36,9 @@ public class AchievementResource {
     public void deleteUserAchievement(@PathVariable Long achievementId) {
         this.achievementService.deleteUserAchievement(achievementId);
     }
+
+    @GetMapping("/getLockedFilteredAchievements/{team}")
+    public List<AchievementDTO> getFilteredAchievements(@PathVariable String team) {
+        return this.achievementService.getFilteredData(team);
+    }
 }
