@@ -10,7 +10,7 @@ import {WelcomeComponent} from "./components/welcome/welcome.component";
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
-  { path: '', component: SigninComponent},
+  { path: 'signin', component: SigninComponent},
   { path: 'profile', component: ProfileComponent},
   { path: 'achievements', component: AchievementsComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
