@@ -32,6 +32,8 @@ import { DialogRemoveComponent } from './components/dialog-remove/dialog-remove.
 import {SignupComponent} from "./components/signup/signup.component";
 import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { LeaderboardListItemComponent } from './components/leaderboard-list-item/leaderboard-list-item.component';
+import { RankingBadgeComponent } from './components/ranking-badge/ranking-badge.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { SettingsComponent } from './components/settings/settings.component';
     DialogRemoveComponent,
     SignupComponent,
     InfoDialogComponent,
-    SettingsComponent
+    SettingsComponent,
+    LeaderboardListItemComponent,
+    RankingBadgeComponent
   ],
   entryComponents:[DialogExampleComponent, CustomSnackbarComponent],
   imports: [
