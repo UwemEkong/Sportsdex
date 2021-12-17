@@ -70,5 +70,12 @@ public class AuthService {
 
         return loggedInUser;
     }
+
+    public void editUser(userDTO userDTO) {
+        user user = userRepository.findByUsername(userDTO.getUsername());
+        user edited = new user(user.getId(), userDTO.getUsername(), userDTO.getPassword(), userDTO.getEmail(), userDTO.getFirstname(), userDTO.getLastname(), userDTO.getFavoriteteam());
+        loggedInUser = new userDTO(edited.getId(), edited.getUsername(), edited.getPassword(), edited.getEmail(), edited.getFirstname(), edited.getLastname(), edited.getFavoriteteam());
+        userRepository.save(edited);
+    }
 }
 

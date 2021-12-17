@@ -38,7 +38,7 @@ public class AchievementService {
     }
 
     public void unlockAchievement(Long achievementId) {
-        UserAchievement existingAchievement = userAchievementRepository.findUserAchievementByAchievementId(achievementId);
+        UserAchievement existingAchievement = userAchievementRepository.findUserAchievementByAchievementIdAndUserId(achievementId, this.authService.getLoggedInUser().getId());
 
         if (existingAchievement == null) {
             userAchievementRepository.save(new UserAchievement(authService.getLoggedInUser().getId(), achievementId));
