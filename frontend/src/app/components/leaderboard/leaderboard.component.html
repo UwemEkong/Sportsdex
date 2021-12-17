@@ -1,1 +1,46 @@
-<p>leaderboard works!</p>
+<app-nav></app-nav>
+
+<div class="header-cont">
+  <header>
+    <div>
+      <table class="center">
+        <tr>
+          <td>
+            <img src="../../assets/baseball.png" alt="Baseball" class="baseball">
+
+            <img src="../../assets/flag.png" alt="Flag" class="flag">
+          </td>
+        <tr>
+      </table>
+    </div>
+  </header>
+
+  <div>
+    <table class="center">
+      <tr>
+        <td>
+          <img src="../../assets/bears.png" alt="Bears" class="bears">
+        </td>
+      <tr>
+    </table>
+  </div>
+
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-4">SportsDex Leaderboard!</h1>
+  <p class="lead">Below is a list of players with the top achievement score!</p>
+  <p>Not on the list yet???  Well keep supporting Chicago sports and one day you might be here.</p>
+  <hr class="my-4">
+  <p class="lead">
+  </p>
+  <ul class="list-group">
+
+    <tr *ngFor="let user of this.achievementServ.leaderboard; let i = index">
+    {{user.username}} <br><br><br>
+    </tr>
+
+
+</ul>
+
+</div>

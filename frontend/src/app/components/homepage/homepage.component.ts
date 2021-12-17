@@ -12,9 +12,15 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
     this.achievementService.getUnlockedAchievements();
+    this.achievementService.getLeaderbooard();
+    this.achievementService.getNumAch();
   }
 
   route() {
 
+  }
+
+  log(id: number | undefined) {
+    console.log(id);
   }
 }
