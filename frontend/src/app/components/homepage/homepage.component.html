@@ -1,18 +1,18 @@
 <app-nav></app-nav>
 <div class="row col-container">
-  <div class="col-3">
+  <div class="col-3 first-col">
     <ul class="list-group" id="myachiev">
       <p id="header">My Achievements</p>
       <app-achievement-list-item *ngFor="let achievement of this.achievementService.unlockedAchievements" [achievement]=achievement></app-achievement-list-item>
     </ul>
   </div>
-  <div class= col-6>
+  <div class= "col-6 second-col">
     <div class="container banner-container">
       <img src="/assets/img/themeBanner.png">
     </div>
     <app-achievement-list></app-achievement-list>
   </div>
-  <div class="col-3">
+  <div class="col-3 third-col">
     <ul class="list-group" id="list">
      <p id="label">Most Achieved Fans</p>
       <li class="list-group-item d-flex justify-content-between align-items-center">
