@@ -2,11 +2,9 @@
     <form #filterData="ngForm" (ngSubmit)="filterAchievements(filterData)" novalidate>
         <div class="form-group">
 
-            <input class="form-control filter-input" name="filterName" value="filterName" id="filterName" ngModel="">
-
+            <input class="form-control filter-input" name="filterName" value="filterName" id="filterName" ngModel required #team="ngModel">
 
             <button class="filter-btn">Filter By Team!</button>
-
 
         </div>
     </form>

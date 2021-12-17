@@ -12,6 +12,7 @@ export class AchievementsService {
 
 
 lockedAchievements = <Achievement[]>[];
+  lockedFilteredAchivements = <Achievement[]>[];
 unlockedAchievements = <Achievement[]>[];
 selectedAchievement = <Achievement>{};
   getLockedAchievements() {
@@ -41,6 +42,13 @@ selectedAchievement = <Achievement>{};
     this.httpClient.delete(`api/achievement/deleteUserAchievement/${achievement.id}`).subscribe(data => {
       console.log(data);
       this.getUnlockedAchievements();
+    })
+  }
+
+  getFilteredData(team: String) {
+    this.httpClient.get<Achievement[]>(`api/achievement/getLockedFilteredAchievements/${team}`).subscribe(data => {
+      console.log("FILTERDATA = " + data)
+      this.lockedAchievements = data;
     })
   }
 }

@@ -25,14 +25,14 @@ export class AchievementComponent implements OnInit {
     this.confirmUnlock();
   }
 
- 
+
 
   confirmUnlock() {
     this.achievementService.selectedAchievement = this.achievement;
     let dialogRef = this.dialog.open(DialogExampleComponent);
   }
 
-  
+
 
   deleteUserAchievement() {
     this.achievementService.selectedAchievement = this.achievement;
@@ -49,7 +49,7 @@ export class AchievementComponent implements OnInit {
     }
 
     if(points == '1') {
-      points = 'bronze';
+      points = '#cc6633';
     }
     return points;
   }

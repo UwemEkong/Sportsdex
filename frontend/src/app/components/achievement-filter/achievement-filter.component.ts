@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {AchievementsService} from "../../services/achievements.service";
+import { Achievement } from 'src/app/interfaces/Achievement';
 
 @Component({
   selector: 'app-achievement-filter',
@@ -7,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AchievementFilterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public achievementService: AchievementsService) {
+    this.achievementService = achievementService;
+  }
+  @Input() achievement = <Achievement>{};
+  @Input() isLocked = false;
+  @Input() cardSize = 0;
 
   ngOnInit(): void {
-  }
-  selectedTeam = "Chicago Bulls";
-  filterAchievements(filterData: any) {
 
+  }
+
+  filterAchievements(filterData: any) {
+    this.achievementService.getFilteredData(filterData.value.filterName);
   }
 
 }
